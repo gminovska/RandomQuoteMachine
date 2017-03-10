@@ -72,6 +72,12 @@ blockquote cite {
 	justify-content: space-around;
 
 }
+
+/*remove blue outline*/
+.btn:focus, .btn:active {
+	outline: none !important; 	
+}
+
 .btn-default:hover {
 	background-color: rgba(252, 139, 128, 0.75);
 }
