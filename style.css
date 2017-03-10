@@ -1,0 +1,86 @@
+html { 
+  background: url(images/mountains.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	background-color: transparent;
+}
+
+#container {
+	width: 50%;
+	/*height: 300px;*/
+	background-color: rgba(228, 228, 228, 0.83);
+	margin: 0 auto;
+/*centering the quote horizontally and vertically*/
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	  
+}
+
+header {
+	
+	/*background-color: gainsboro;*/
+	text-align: center;
+}
+
+h1, h3 {
+	font-family: 'Special Elite', cursive;
+}
+
+header h1 {
+	font-weight: 100;
+    color: rgba(252, 139, 128, 0.75);
+	margin-bottom: 0;
+}
+
+header h3 {
+	color: #9E9E9E;
+    font-size: 1em;
+	font-family: 'Merriweather', 'Georgia', serif;
+	font-weight: 100;
+	margin: 0 0 50px 0;
+
+}
+
+blockquote p {
+	padding: 25px;
+text-align: center;
+font-size: 1.8em;
+font-family: 'Special Elite', cursive;
+}
+blockquote cite {
+	display: block;
+    text-align: right;
+	font-size: 1.3em;
+	font-family: 'Merriweather', 'Georgia', serif;
+	margin-bottom: 20px;
+	color: #fc8b80;
+}
+.buttons {
+	background: gainsboro;
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px 0;
+	
+	/*make buttuns equally distributed*/
+	display: flex;
+	justify-content: space-around;
+
+}
+.btn-default:hover {
+	background-color: rgba(252, 139, 128, 0.75);
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border: 1px solid black;
+  border-radius: 35px;
+}
