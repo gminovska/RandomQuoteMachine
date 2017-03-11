@@ -99,3 +99,9 @@ blockquote cite {
 #github:hover {
 	color: rgba(252, 139, 128, 0.75);
 }
+
+@media (max-width:800px) {
+	#container, .buttons {
+		width: 80%;
+	}
+}
