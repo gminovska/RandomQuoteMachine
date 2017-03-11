@@ -1,7 +1,12 @@
 
 $(document).ready(function() {
+    
     displayQuoteFromArray();
-    $("#next_quote").click(getRandomQuote);
+
+    $("#next_quote").click(function() {
+        $('#main').fadeOut();
+        getRandomQuote();
+    });
     
     function getRandomQuote() {
         $.ajax({
@@ -24,11 +29,12 @@ $(document).ready(function() {
     }
 
     function displayQuote(response) {
+            
             $("#quote").text(response.quote);
             $('#author').text(response.author);
             //update the tweet href
             tweetQuote();
-            
+            $('#main').fadeIn(1200); 
         }
 	
     function displayQuoteFromArray() {

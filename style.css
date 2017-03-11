@@ -46,7 +46,9 @@ header h3 {
 	margin: 0 0 50px 0;
 
 }
-
+blockquote {
+	border: none;
+}
 blockquote p {
 	padding: 25px;
 text-align: center;
@@ -73,12 +75,12 @@ blockquote cite {
 
 }
 
-/*remove blue outline*/
 .btn:focus, .btn:active {
-	outline: none !important; 	
+	outline: none !important; 
+	
 }
-
 .btn-default:hover {
+	
 	background-color: rgba(252, 139, 128, 0.75);
 }
 .btn-circle.btn-xl {
