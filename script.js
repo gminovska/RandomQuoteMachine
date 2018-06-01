@@ -13,7 +13,7 @@ $(document).ready(function() {
         type: "POST",
         url: "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous",
         dataType: "json",
-        success: displayQuote, 
+        success: displayAPIQuote, 
 
         //@todo create a function that will display quotes from an array is AJAX fails
         error: displayQuoteFromArray,
@@ -27,9 +27,17 @@ $(document).ready(function() {
         xhr.setRequestHeader("Accept", "application/json");
       }
     }
+    function displayAPIQuote(response) {
+        console.log(response[0].quote);
+        $("#quote").text(response[0].quote);
+        $('#author').text(response[0].author);
+        //update the tweet href
+        tweetQuote();
+        $('#main').fadeIn(1200); 
+    }
 
     function displayQuote(response) {
-            
+            console.log(response.quote);
             $("#quote").text(response.quote);
             $('#author').text(response.author);
             //update the tweet href
